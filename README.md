@@ -39,6 +39,7 @@ services:
       - /share/docker/cups/config:/etc/cups/:rw
       - /share/docker/cups/logs:/var/log/cups:rw
       - /share/docker/cups/cpc:/etc/cloud-print-connector:rw
+      - /share/docker/cups/spool:/var/spool/cups:rw
     ports:
       - 137:137/udp
       - 139:139/tcp
