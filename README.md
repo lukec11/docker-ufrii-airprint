@@ -20,6 +20,7 @@ docker run -rm -d -e CUPS_USER_ADMIN=admin -e CUPS_USER_PASSWORD=secr3t \
     -v /share/docker/cups/config:/etc/cups/:rw \
     -v /share/docker/cups/logs:/var/log/cups:rw \
     -v /share/docker/cups/cpc:/etc/cloud-print-connector:rw \
+    -v /share/docker/cups/spool:/var/spool/cups:rw \
     jakbutler/ufrii-airprint:2.0.0
 ```
 
